@@ -1,0 +1,160 @@
+body{
+    background-color: #006494;
+}
+.cabesa{
+    display: flex;
+    margin-left: 20px;
+    
+    .log{
+        display: flex;
+        font: 10px verdana;
+        color: #E8F1F2 ;
+        h1{
+            margin-top: 50px;
+            margin-left: -67px;
+        }
+    }
+}
+main{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    
+}
+.esquerda{
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 840px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+  h1{
+    font: lighter 24px times;
+    color: #C97D60;
+    margin-bottom: -40px;
+  }
+  p{
+    font: normal 45px times;
+    color: #E8F1F2;
+  }
+  button{
+    background-color: #E8F1F2;
+    border: none;
+    border-radius: 5px;
+    color: #006494;
+    height: 30px;
+    width: 120px;
+    a{
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+.img{
+    margin-top: -90px;
+}
+.im{
+    margin-top: 250px;
+    border-radius: 10px;
+}
+.direita{
+    margin-left: -210px;
+    margin-top: -100px;
+    
+    display: flex;
+    div{
+        .im{
+            margin-top: 250px;
+            border-radius: 10px;
+        }
+        img{
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+.rodape{
+    background-color: #FFF1D0;
+    margin: -8px;
+    .pe{
+        .p1{
+            margin-left: 70px;
+        }
+        .p2{
+            margin-left: 70px;
+        }
+        .p3{
+            margin-left: 70px;
+        }
+        .e{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        display: flex;
+        justify-content: space-around;
+        .meio{
+            display: flex;
+            flex-direction: column;
+            height: 240px;
+        }
+        .esque{
+            display: flex;
+            flex-direction: column;
+            margin-left: 18px;
+            height: 240px;
+        }
+        .dire{
+            display: flex;
+            flex-direction: column;
+            margin-right: 58px;
+            height: 240px;
+        }
+    }
+    .imgs{
+        margin-top: 12px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .cabesa {
+        flex-direction: column; /* Empilha os itens do cabeçalho em telas menores */
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    main {
+        flex-direction: column; /* Empilha os itens principais em telas menores */
+        align-items: center;
+        padding: 10px; /* Ajusta o padding */
+    }
+    
+    .esquerda, .direita {
+        max-width: 100%; /* Ocupa toda a largura */
+        margin:auto; /* Ajuste de margens em telas menores */
+    }
+    footer{
+        background-color: #FFF1D0;
+    }
+    .pe{
+        text-align:center;
+        justify-content: center;
+        flex-direction: column; /* Empilha os elementos do rodapé em telas menores */
+        gap: 5px; /* Espaçamento entre os itens */
+        display: flex;
+    }
+    .meio{
+        display: flex;
+        flex-direction: column;
+    }
+    .esque{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .dire{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
